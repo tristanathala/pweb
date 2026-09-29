@@ -107,6 +107,13 @@ table {
     border-collapse: collapse;
     margin-top: 16px;
 }
+.tabel-scroll {
+    overflow-x: auto;
+}
+.tabel-scroll table {
+    min-width: 700px;
+    font-size: 14px;
+}
 caption {
     text-align: left;
     margin-bottom: 10px;
