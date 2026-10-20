@@ -1,0 +1,137 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: "Nunito", Arial, sans-serif;
+  background: #f2f2f2;
+  color: #333;
+}
+
+.navbar {
+  background: #e05a6e;
+  color: #fff;
+  font-weight: 700;
+  padding: 20px 22px;
+}
+
+.container {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 58px 22px;
+}
+
+.card {
+  background: #fff;
+  padding: 30px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.08);
+}
+
+.card p {
+  margin: 0 0 22px;
+}
+
+label {
+  display: block;
+  font-weight: 700;
+  margin: 18px 0 12px;
+}
+
+select {
+  appearance: none;
+  -webkit-appearance: none;
+  font-family: inherit;
+  font-size: 16px;
+  color: #333;
+  padding: 11px 50px 11px 20px;
+  border: 1px solid #ccc;
+  border-radius: 24px;
+  background: #fff url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3E%3Cpath fill='none' stroke='%233b5bdb' stroke-width='2' d='M3 6l5 5 5-5'/%3E%3C/svg%3E") no-repeat right 18px center / 16px;
+  cursor: pointer;
+}
+
+select:focus {
+  outline: none;
+  border-color: #3b5bdb;
+}
+
+.search-bar {
+  display: flex;
+}
+
+.input-icon {
+  flex: 1;
+  position: relative;
+}
+
+.input-icon svg {
+  position: absolute;
+  left: 14px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.input-icon input {
+  width: 100%;
+  font-family: inherit;
+  font-size: 16px;
+  padding: 12px 12px 12px 48px;
+  border: 1px solid #ccc;
+  border-radius: 24px 0 0 24px;
+}
+
+.input-icon input:focus {
+  outline: none;
+  border-color: #3b5bdb;
+}
+
+.search-bar button {
+  font-family: inherit;
+  font-size: 16px;
+  background: #6cc77a;
+  color: #fff;
+  border: none;
+  padding: 0 18px;
+  border-radius: 0 4px 4px 0;
+  cursor: pointer;
+}
+
+.search-bar button:hover {
+  background: #5bb46a;
+}
+
+h2 {
+  font-size: 34px;
+  margin: 26px 0 0;
+}
+
+.info {
+  font-size: 20px;
+  margin: 4px 0 22px;
+}
+
+.result {
+  display: inline-block;
+  vertical-align: top;
+  width: 520px;
+  max-width: 100%;
+  margin: 0 16px 16px 0;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  border-radius: 4px;
+  overflow: hidden;
+}
+
+.result-title {
+  background: #6cc77a;
+  color: #fff;
+  font-weight: 700;
+  padding: 14px 20px;
+}
+
+.result-body {
+  background: #eef9f0;
+  color: #2b7a3b;
+  padding: 18px 28px;
+  line-height: 1.6;
+}

@@ -1,0 +1,84 @@
+body {
+  font-family: Arial, sans-serif;
+  background: #f4f4f4;
+  margin: 0;
+  padding: 20px;
+}
+
+h1 {
+  text-align: center;
+  margin: 10px 0 20px;
+}
+
+.container {
+  background: #fff;
+  max-width: 420px;
+  margin: 0 auto 40px;
+  padding: 20px 25px;
+  border-radius: 6px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+label {
+  display: block;
+  font-size: 14px;
+  margin-top: 12px;
+  margin-bottom: 4px;
+}
+
+input[type=text],
+input[type=email],
+input[type=password],
+select,
+textarea {
+  width: 100%;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+textarea {
+  height: 50px;
+  resize: vertical;
+}
+
+.error {
+  color: red;
+  font-size: 12px;
+  display: block;
+  min-height: 14px;
+}
+
+.check {
+  margin-top: 12px;
+  font-size: 14px;
+}
+
+.btn {
+  background: #3b7ddd;
+  color: #fff;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-top: 12px;
+}
+
+.btn-green {
+  background: #5cb85c;
+  width: 100%;
+  padding: 10px;
+  font-size: 16px;
+}
+
+hr {
+  max-width: 600px;
+  margin: 30px auto;
+}
+
+#emailMsg {
+  margin-top: 10px;
+  font-size: 14px;
+  text-align: center;
+}

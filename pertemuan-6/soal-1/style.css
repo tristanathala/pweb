@@ -1,0 +1,67 @@
+body {
+  font-family: Arial, sans-serif;
+  background: #f2f2f2;
+  padding: 20px;
+}
+
+.box {
+  max-width: 500px;
+  margin: auto;
+  background: #fff;
+  padding: 20px 30px;
+  border-radius: 4px;
+}
+
+h2 {
+  margin-top: 0;
+}
+
+label {
+  display: block;
+  margin-top: 14px;
+  margin-bottom: 4px;
+}
+
+input,
+select {
+  width: 100%;
+  padding: 7px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+  box-sizing: border-box;
+}
+
+.wrap {
+  position: relative;
+}
+
+#suggestions {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  border: 1px solid #ccc;
+  border-top: none;
+  position: absolute;
+  width: 100%;
+  background: #fff;
+  z-index: 10;
+}
+
+#suggestions li {
+  padding: 6px 8px;
+  cursor: pointer;
+}
+
+#suggestions li:hover {
+  background: #e3f2fd;
+}
+
+button {
+  margin-top: 18px;
+  padding: 8px 16px;
+  background: #2f6fd6;
+  color: #fff;
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+}
