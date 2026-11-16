@@ -1,0 +1,339 @@
+@font-face {
+    font-family: 'Plus Jakarta Sans';
+    src: url('../fonts/plus-jakarta-sans-latin-400-normal.woff2') format('woff2');
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: 'Plus Jakarta Sans';
+    src: url('../fonts/plus-jakarta-sans-latin-600-normal.woff2') format('woff2');
+    font-weight: 600;
+}
+
+@font-face {
+    font-family: 'Plus Jakarta Sans';
+    src: url('../fonts/plus-jakarta-sans-latin-800-normal.woff2') format('woff2');
+    font-weight: 800;
+}
+
+:root {
+    --papan: #1f4d3a;
+    --papan-tua: #163828;
+    --manila: #edc25e;
+    --tinta: #1b2420;
+    --sage: #eef3ee;
+    --garis: #cfdcd3;
+
+    --bs-body-font-family: 'Plus Jakarta Sans', system-ui, sans-serif;
+    --bs-body-color: var(--tinta);
+    --bs-link-color-rgb: 31, 77, 58;
+    --bs-link-hover-color-rgb: 22, 56, 40;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    line-height: 1.6;
+}
+
+main {
+    flex-grow: 1;
+}
+
+h1, h2, h3,
+.h3, .h4, .h5 {
+    font-weight: 800;
+    letter-spacing: -0.02em;
+    line-height: 1.15;
+}
+
+p {
+    max-width: 65ch;
+}
+
+a:focus-visible,
+.btn:focus-visible,
+.form-control:focus {
+    outline: 3px solid var(--manila);
+    outline-offset: 2px;
+    box-shadow: none;
+}
+
+.btn {
+    border-radius: 8px;
+    font-weight: 600;
+    padding: 0.6rem 1.2rem;
+}
+
+.btn-papan {
+    background-color: var(--papan);
+    border-color: var(--papan);
+    color: #ffffff;
+}
+
+.btn-papan:hover {
+    background-color: var(--papan-tua);
+    border-color: var(--papan-tua);
+    color: #ffffff;
+}
+
+.btn-manila {
+    background-color: var(--manila);
+    border-color: var(--manila);
+    color: var(--tinta);
+}
+
+.btn-manila:hover {
+    background-color: #e0b03f;
+    border-color: #e0b03f;
+    color: var(--tinta);
+}
+
+.btn-garis {
+    border: 2px solid currentColor;
+    color: inherit;
+}
+
+.btn-garis:hover {
+    background-color: rgba(255, 255, 255, 0.12);
+    color: inherit;
+}
+
+.site-nav {
+    border-bottom: 1px solid var(--garis);
+}
+
+.navbar-brand {
+    color: var(--papan);
+    font-weight: 800;
+}
+
+.site-nav .nav-link {
+    color: var(--tinta);
+    font-weight: 600;
+}
+
+.site-nav .nav-link.active {
+    color: var(--papan);
+    text-decoration: underline;
+    text-decoration-color: var(--manila);
+    text-decoration-thickness: 3px;
+    text-underline-offset: 8px;
+}
+
+.hero {
+    background-color: var(--papan);
+    color: #ffffff;
+}
+
+.hero h1 {
+    font-size: clamp(2.2rem, 5vw, 3.6rem);
+}
+
+.hero p {
+    color: #d7e5dc;
+    font-size: 1.15rem;
+}
+
+.status-hitung {
+    background-color: var(--sage);
+    border-left: 4px solid var(--papan);
+    padding: 0.5rem 0.75rem;
+    font-weight: 600;
+}
+
+.page-head {
+    background-color: var(--papan);
+    color: #ffffff;
+}
+
+.page-head p {
+    color: #d7e5dc;
+}
+
+.bagian-sage {
+    background-color: var(--sage);
+}
+
+.ikon-bulat {
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    background-color: var(--sage);
+    color: var(--papan);
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.2rem;
+    flex-shrink: 0;
+}
+
+.bagian-sage .ikon-bulat {
+    background-color: #ffffff;
+}
+
+.daftar-cek {
+    list-style: none;
+    padding: 0;
+}
+
+.daftar-cek li {
+    display: flex;
+    gap: 0.75rem;
+    align-items: center;
+    padding: 0.6rem 0;
+}
+
+.panel {
+    background-color: #ffffff;
+    border: 1px solid var(--garis);
+    border-radius: 12px;
+}
+
+.kode-jurusan {
+    display: inline-block;
+    min-width: 3.2rem;
+    text-align: center;
+    background-color: var(--manila);
+    border-radius: 6px;
+    font-weight: 800;
+    padding: 0.1rem 0.5rem;
+}
+
+.langkah {
+    list-style: none;
+    padding: 0;
+    counter-reset: langkah;
+}
+
+.langkah li {
+    counter-increment: langkah;
+    position: relative;
+    padding: 0 0 1.75rem 3.5rem;
+    border-left: 2px solid var(--garis);
+    margin-left: 1.25rem;
+}
+
+.langkah li:last-child {
+    border-left-color: transparent;
+}
+
+.langkah li::before {
+    content: counter(langkah);
+    position: absolute;
+    left: -1.3rem;
+    top: -0.2rem;
+    width: 2.5rem;
+    height: 2.5rem;
+    border-radius: 50%;
+    background-color: var(--papan);
+    color: #ffffff;
+    font-weight: 800;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.langkah h3 {
+    font-size: 1.1rem;
+    margin-bottom: 0.25rem;
+}
+
+.sub-nav a {
+    display: block;
+    padding: 0.4rem 0.75rem;
+    border-left: 3px solid var(--garis);
+    color: var(--tinta);
+    text-decoration: none;
+}
+
+.sub-nav a:hover {
+    border-left-color: var(--papan);
+    color: var(--papan);
+}
+
+.faq details {
+    border-bottom: 1px solid var(--garis);
+    padding: 0.9rem 0;
+}
+
+.faq summary {
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.faq details p {
+    margin: 0.5rem 0 0;
+}
+
+.auth-wrap {
+    min-height: 100%;
+}
+
+.auth-side {
+    background-color: var(--papan);
+    color: #ffffff;
+}
+
+.auth-side p,
+.auth-side li {
+    color: #d7e5dc;
+}
+
+.form-control {
+    border-radius: 8px;
+    padding: 0.65rem 0.9rem;
+    border-color: var(--garis);
+}
+
+.form-label {
+    font-weight: 600;
+}
+
+.map-frame {
+    width: 100%;
+    height: 320px;
+    border: 1px solid var(--garis);
+    border-radius: 12px;
+    background-color: var(--sage);
+}
+
+.site-footer {
+    background-color: var(--papan-tua);
+    color: #c4d6ca;
+}
+
+.site-footer a {
+    color: #ffffff;
+}
+
+.hero-foto {
+    position: relative;
+    margin: 0 0 14px 14px;
+}
+
+.hero-foto::before {
+    content: '';
+    position: absolute;
+    inset: 14px 14px -14px -14px;
+    background-color: var(--manila);
+    border-radius: 12px;
+}
+
+.hero-foto img {
+    position: relative;
+    display: block;
+    width: 100%;
+    height: auto;
+    border-radius: 12px;
+}
+
+.form-wrap {
+    width: 100%;
+    max-width: 440px;
+}
+
+.sub-nav {
+    top: 1.5rem;
+}
